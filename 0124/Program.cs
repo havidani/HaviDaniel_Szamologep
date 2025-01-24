@@ -36,6 +36,18 @@ namespace _0124
 			{
 				return szam1 - szam2;
 			}
+			else if (mj == '/')
+			{
+				if (szam2 != 0)
+				{
+					return szam1 / szam2;
+				}
+				else
+				{
+					Console.WriteLine("Hiba: Nullával való osztás nem lehetséges.");
+					return 0;
+				}
+			}
 			else
 			{
 				Console.WriteLine("Ismeretlen művelet.");
