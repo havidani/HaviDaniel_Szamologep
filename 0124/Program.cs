@@ -19,7 +19,24 @@ namespace _0124
 			Console.Write("Az elvégzendő művelet jele: ");
 			char jel = Console.ReadLine()[0];
 
+			int eredmény = osszeadas(elso, masodik, jel);
+
+			Console.WriteLine($"Az összeg: {eredmény}");
+
 			Console.WriteLine($"Az első szám: {elso}, a második szám: {masodik}, a művelet jele: {jel}");
 		}
+
+			static int osszeadas(int szam1, int szam2, char mj)
+			{
+				if (mj == '+')
+				{
+					return szam1 + szam2;
+				}
+				else
+				{
+					Console.WriteLine("Ismeretlen művelet.");
+					return 0;
+				}
+			}
 	}
 }
