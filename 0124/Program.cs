@@ -48,6 +48,10 @@ namespace _0124
 					return 0;
 				}
 			}
+			else if (mj == '*')
+			{
+				return szam1 * szam2;
+			}
 			else
 			{
 				Console.WriteLine("Ismeretlen művelet.");
